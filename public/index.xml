@@ -1,0 +1,57 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+	<title>Naty Harary&#39;s Personal Website</title>
+	<link>http://example.org/</link>
+	<description>Recent content on Naty Harary&#39;s Personal Website</description>
+	<generator>Hugo -- gohugo.io</generator>
+	<language>en-us</language>
+	<lastBuildDate>Mon, 06 Feb 2023 22:09:57 +0200</lastBuildDate>
+    
+        <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	
+	
+	<item>
+		<title>Upserts With PeeWee2</title>
+		<link>http://example.org/blog/upserts_with_peewee2/</link>
+		<pubDate>Mon, 06 Feb 2023 22:09:57 +0200</pubDate>
+		
+		<guid>http://example.org/blog/upserts_with_peewee2/</guid>
+		<description>&lt;h1 id=&#34;aka-what-do-you-do-when-you-are-missing-a-critical-function&#34;&gt;AKA what do you do when you are missing a critical function?&lt;/h1&gt;
+&lt;p&gt;So, I tried to find a solution of using an external database, which cannot receive queries by any API, but rather just allows users to download itself as an excel file.
+In this case it was a DB containing a mapping between US ZipCodes* and US states.&lt;/p&gt;
+&lt;p&gt;This mapping changes every once in a while, and I wanted to allow users to grab a new .xls file and upload it to our systems.
+An elegant solution to this problem was to avoid deleting the entire zipcode table, but rather upserting it, specifically aiming at replacing values upon conflict.
+(I probably could&amp;rsquo;ve just replaced the entire table but where&amp;rsquo;s the fun in that)&lt;/p&gt;
+&lt;p&gt;HOWEVER
+I&amp;rsquo;ve been working with some legacy systems, some using the PeeWee2 ORM&amp;hellip;
+What&amp;rsquo;s PeeWee?
+As someone who worked with Django I never heard of it, but &lt;a href=&#34;https://docs.peewee-orm.com/&#34;&gt;it exists&lt;/a&gt; and it is pretty neat!&lt;/p&gt;
+&lt;p&gt;But we are working with an older version which doesn&amp;rsquo;t support upsert.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I bet you didn&amp;rsquo;t know, but ZipCode™ is uppercased like that since it is trademarked by the United States Postal Service, and ZIP stands for &amp;ldquo;Zip Improvement Plan&amp;rdquo;.
+Now you know.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>About</title>
+		<link>http://example.org/meta_pages/about/</link>
+		<pubDate>Tue, 31 Jan 2023 23:53:55 +0200</pubDate>
+		
+		<guid>http://example.org/meta_pages/about/</guid>
+		<description>&lt;h1 id=&#34;whoami&#34;&gt;WHOAMI&lt;/h1&gt;
+&lt;p&gt;I&amp;rsquo;m Naty&lt;/p&gt;
+&lt;p&gt;This is my website&lt;/p&gt;
+&lt;p&gt;Gonna be overwhelming and underwhelming&lt;/p&gt;
+&lt;p&gt;What can you expect?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Posts&lt;/li&gt;
+&lt;li&gt;Rants&lt;/li&gt;
+&lt;li&gt;Pants&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+	</item>
+	
+	</channel>
+</rss>
