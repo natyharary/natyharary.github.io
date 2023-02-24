@@ -1,3 +1,13 @@
-{{ define "title" -}}
-{{ .Title }}
-{{- end }}
+{{ partial "header.html" . }}
+{{ partial "article_nav.html" . }}
+
+<div id="main" role="main">
+
+    <div id="content" class="article">
+        <div id="article_content" class="entry-content">
+            {{ .Content }}
+        </div>
+    </div>
+</
+
+{{ partial "footer.html" . }}

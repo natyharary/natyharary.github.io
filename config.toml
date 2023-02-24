@@ -1,6 +1,6 @@
 baseURL = 'https://natyharary.github.io'
 languageCode = 'en-us'
-title = "Naty Harary's Personal Website"
+title = "Naty Harary"
 theme = 'natyharary_theme'
 
 [params]
