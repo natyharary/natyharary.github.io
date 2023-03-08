@@ -1,0 +1,34 @@
+// Variables
+$maroon: #903939;
+$white: #ffffff;
+
+body {
+	font-family: sans-serif ;
+	background: $maroon ;
+	color: $white ;
+	text-align: center ;
+}
+
+main {
+	max-width: 800px ;
+	margin: auto ;
+}
+
+img {
+	max-width: 100% ;
+}
+
+header h1 {
+	text-align: center ;
+}
+
+footer {
+	text-align: center ;
+	clear: both ;
+}
+
+a {
+	color: $white;
+	text-decoration: underline;
+  }
+  
