@@ -3,7 +3,6 @@
         <meta charset="utf-8">
 
             {{/*  Style  */}}
-            {{/*  {{ $style := resources.Get "css/style.scss" }}  */}}
             {{ $style := resources.Get "css/style.scss" | resources.ToCSS | resources.Minify }}
             <link rel="stylesheet" href="{{ $style.Permalink }}">
 

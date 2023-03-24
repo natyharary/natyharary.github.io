@@ -6,13 +6,18 @@ body {
 	font-family: sans-serif ;
 	background: $maroon ;
 	color: $white ;
-	text-align: center ;
+	text-align: left ;
 }
 
 main {
 	max-width: 800px ;
 	margin: auto ;
 }
+
+#container {
+	max-width: 800px ;
+	margin: 0 auto ;
+  }
 
 img {
 	max-width: 100% ;
