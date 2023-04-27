@@ -1,21 +1,21 @@
 baseURL = 'https://natyharary.github.io'
 theme = "salinger"
 title = "Naty Harary"
-copyright = '2023 Naty Harary'
+copyright = 'Naty Harary'
 ignoreErrors = ["error-remote-getjson"]
 languageCode = 'en-us'
 
 [params]
 DateFormat = "January 2006"
 
-author = "John Doe"
-description = "I'm a computer engineering student based in Modena, Italy. I like developing and designing random stuffs."
-header = "<strong>Hi, I'm John. 👋 </strong>"
+author = "Naty Harary"
+description = "I'm a software engineer based in Tel Aviv, Israel. I also do wood-stuff and yoga!"
+header = "<strong>Hi, I'm Naty. 👋 </strong>"
 keywords = [ "Portfolio", "developer", "coding", "maker"]
 showHeaderOnHomepage = false
 #googleAnalytics = ""
 twemoji = true
-text404 = "Since the page you were looking for seems like doesn't exist, we <strong>strongly</strong> suggest you to better investigate the URL and/or go back to the <a href=\"/\">home</a>. </br></br> <iframe src=\"https://giphy.com/embed/aCKMaeduKfFXG\" width=\"480\" height=\"480\" frameBorder=\"0\" class=\"giphy-embed\" allowFullScreen></iframe>"
+text404 = "You got nowhere. I'm sorry. Maybe it is your fault, maybe it is mine. Take the time to embrace the nothingness, the silence. Stay for a while. Or go back <a href=\"/\">home</a>. </br></br> <iframe src=\"https://giphy.com/embed/l3fQheV6fal3N5dgA\" width=\"480\" height=\"480\" frameBorder=\"0\" class=\"giphy-embed\" allowFullScreen></iframe> "
 #fontawesomekitcode = ""
 
 
@@ -25,28 +25,15 @@ text404 = "Since the page you were looking for seems like doesn't exist, we <str
 
 [[params.social]]
 name = "github"
-url = "https://github.com/example"
+url = "https://github.com/natyharary"
 icon = "fa fa-github"
 before = "Reach me on "
 
 [[params.social]]
-name = "twitter"
-url = "https://twitter.com/example"
-icon = "fa fa-twitter"
-before = "and "
-
-[[params.social]]
 name = "email"
 icon = "fa fa-envelope"
-url = "mailto:hi@john.com"
-before = ", or drop me a line on"
-
-[[params.social]]
-name = "email"
-icon = "fa fa-telegram"
-url = "https://t.me/john"
-before = "and on "
-after = "."
+url = "mailto:naty.harary@gmail.com"
+before = "or drop me a line on"
 
 
 
@@ -58,7 +45,7 @@ weight = 1
 
 [[Menu.Main]]
 name = "Contact me."
-url = "mailto:mail@mail.com"
+url = "mailto:naty.harary@gmail.com"
 weight = 2
 
 [taxonomies]
