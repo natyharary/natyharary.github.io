@@ -1,7 +1,6 @@
 ---
 title: "Loading non-primitives with PyYAML, safely!"
 date: 2023-04-21T16:09:54+03:00
-draft: true
 ---
 
 >**TL;DR:** PyYAML doesn't translate Python non-primitive data types, but using unsafe loads might result in a deserialization attack.
