@@ -54,7 +54,7 @@ The reason for this unsafety is that PyYAML will accept **any** custom type.
 
 It will include `!!python/tuple` which is what we want, but also `!!python/object/apply:subprocess.Popen`, which opens a new subprocess in Python. This basically allows code execution like `os.system()`.
 
-You can read more about it [in this article on pentesting](https://book.hacktricks.xyz/pentesting-web/deserialization/python-yaml-deserialization) and [a lengthier paper about deserialization attacks in Python](https://www.exploit-db.com/docs/english/47655-yaml-deserialization-attack-in-python.pdf).
+You can read more about it [in this article on pentesting](https://book.hacktricks.xyz/pentesting-web/deserialization/python-yaml-deserialization) and [a lengthier paper about deserialization attacks in Python](https://web.archive.org/web/20211022233722/https://www.exploit-db.com/docs/english/47655-yaml-deserialization-attack-in-python.pdf).
 
 ## An easy mitigation
 
