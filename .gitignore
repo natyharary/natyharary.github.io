@@ -1,10 +1,3 @@
-# Where static site is published to
-/public
-
-# The staging area for CSS and images
-/resources
-
-# Temp files
-.hugo_build.lock
-
 .idea
+.DS_Store
+node_modules/
