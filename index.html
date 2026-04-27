@@ -244,8 +244,12 @@
         headers: { 'Accept': 'application/vnd.github+json' }
       });
       if (!res.ok) throw new Error('GitHub API ' + res.status);
+      const TWO_YEARS_MS = 2 * 365 * 24 * 60 * 60 * 1000;
+      const recentCutoff = Date.now() - TWO_YEARS_MS;
       const repos = (await res.json())
-        .filter(r => !r.fork && !r.archived)
+        .filter(r => !r.archived)
+        .filter(r => !r.fork || r.name === 'odigos')
+        .filter(r => new Date(r.pushed_at).getTime() >= recentCutoff)
         .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
         .slice(0, 9);
 
